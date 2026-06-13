@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.5.17
+  version: 1.6.0
 
 package:
   name: livekit-plugins-assemblyai
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/l/livekit-plugins-assemblyai/livekit_plugins_assemblyai-${{ version }}.tar.gz
-    sha256: 4392ef7a7fcd29286dae789e0ca7ca31488796ce551bf7fa444a836c371ff9f4
+    sha256: 5541b726766e084ded19284428d92913ae0240a6168c48e723ebcc311d08fd11
   - url: https://raw.githubusercontent.com/livekit/agents/refs/tags/livekit-agents%40${{ version }}/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     file_name: LICENSE
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - livekit-agents >=1.5.17
+    - livekit-agents >=1.6.0
 tests:
   - python:
       python_version:
